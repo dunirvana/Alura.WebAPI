@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "6f85ed80-818d-4212-812d-97bc26dedade",
+		"name": "WebApi Alura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Livro Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Livro Teste\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/Livros",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"Livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro Get (all)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/Livros",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"Livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro Get (id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/Livros/1",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"Livros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"titulo\": \"Livro Teste (editado)\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/Livros",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"Livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}/Livros/2",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"Livros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
