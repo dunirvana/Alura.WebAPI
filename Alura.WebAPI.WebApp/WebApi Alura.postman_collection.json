@@ -6,109 +6,173 @@
 	},
 	"item": [
 		{
-			"name": "Livro Post",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"titulo\": \"Livro Teste\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Livros",
+			"item": [
+				{
+					"name": "Livro Get (all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/Livros",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{UrlBase}}/Livros",
-					"host": [
-						"{{UrlBase}}"
-					],
-					"path": [
-						"Livros"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Livro Get (all)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{UrlBase}}/Livros",
-					"host": [
-						"{{UrlBase}}"
-					],
-					"path": [
-						"Livros"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Livro Get (id)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{UrlBase}}/Livros/1",
-					"host": [
-						"{{UrlBase}}"
-					],
-					"path": [
-						"Livros",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Livro Put",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"titulo\": \"Livro Teste (editado)\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Livro Get (id)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/Livros/1",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros",
+								"1"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{UrlBase}}/Livros",
-					"host": [
-						"{{UrlBase}}"
-					],
-					"path": [
-						"Livros"
-					]
+				{
+					"name": "Livro Get (id)/capa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/Livros/1/capa",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros",
+								"1",
+								"capa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Livro Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/Livros/1002",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Livro Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1002,\r\n    \"titulo\": \"Livro Teste (editado)\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{UrlBase}}/Livros",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Livro Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Livro Teste\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{UrlBase}}/Livros",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"Livros"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Livro Delete",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{UrlBase}}/Livros/2",
-					"host": [
-						"{{UrlBase}}"
-					],
-					"path": [
-						"Livros",
-						"2"
-					]
+			"name": "ListasLeitura",
+			"item": [
+				{
+					"name": "ListaLeitura Get (all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/ListasLeitura",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"ListasLeitura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaLeitura Get (tipo)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{UrlBase}}/ListasLeitura/Lidos",
+							"host": [
+								"{{UrlBase}}"
+							],
+							"path": [
+								"ListasLeitura",
+								"Lidos"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
