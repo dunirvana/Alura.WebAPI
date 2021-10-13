@@ -11,12 +11,28 @@
 				{
 					"name": "Livro Get (all)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/csv",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{UrlBase}}/Livros",
+							"raw": "{{UrlBaseApi}}/Livros",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros"
@@ -28,12 +44,28 @@
 				{
 					"name": "Livro Get (id)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/csv",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{UrlBase}}/Livros/1",
+							"raw": "{{UrlBaseApi}}/Livros/1",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros",
@@ -46,12 +78,22 @@
 				{
 					"name": "Livro Get (id)/capa",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{UrlBase}}/Livros/1/capa",
+							"raw": "{{UrlBaseApi}}/Livros/1/capa",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros",
@@ -65,16 +107,26 @@
 				{
 					"name": "Livro Delete",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{UrlBase}}/Livros/1002",
+							"raw": "{{UrlBaseApi}}/Livros/2004",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros",
-								"1002"
+								"2004"
 							]
 						}
 					},
@@ -83,11 +135,21 @@
 				{
 					"name": "Livro Put",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1002,\r\n    \"titulo\": \"Livro Teste (editado)\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+							"raw": "{\r\n    \"id\": 2004,\r\n    \"titulo\": \"Livro Teste xpto (editado)\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -95,9 +157,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{UrlBase}}/Livros",
+							"raw": "{{UrlBaseApi}}/Livros",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros"
@@ -109,11 +171,21 @@
 				{
 					"name": "Livro Post",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\": \"Livro Teste\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
+							"raw": "{\r\n    \"titulo\": \"Livro Teste xpto\",\r\n    \"subtitulo\": \"Teste\",\r\n    \"autor\": \"Eduardo\",\r\n    \"resumo\": \"Testando novo livro!\",\r\n    \"capa\": null,\r\n    \"lista\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -121,9 +193,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{UrlBase}}/Livros",
+							"raw": "{{UrlBaseApi}}/Livros",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"Livros"
@@ -140,12 +212,28 @@
 				{
 					"name": "ListaLeitura Get (all)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{UrlBase}}/ListasLeitura",
+							"raw": "{{UrlBaseApi}}/ListasLeitura",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"ListasLeitura"
@@ -157,16 +245,63 @@
 				{
 					"name": "ListaLeitura Get (tipo)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFZHVhcmRvIiwianRpIjoiZDQxYzdlZWUtMDcwYi00MDk2LTkxNGMtMDNiYTE4NTUyZmMzIiwiZXhwIjoxNjM0MTI2MzMyLCJpc3MiOiJBbHVyYS5XZWJBcHAiLCJhdWQiOiJQb3N0bWFuIn0.n7RPur5ZZGOegWgGoqu1K04tQBHfRPm9S7DLjPgbGUw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{UrlBase}}/ListasLeitura/Lidos",
+							"raw": "{{UrlBaseApi}}/ListasLeitura/Lidos",
 							"host": [
-								"{{UrlBase}}"
+								"{{UrlBaseApi}}"
 							],
 							"path": [
 								"ListasLeitura",
 								"Lidos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autorização",
+			"item": [
+				{
+					"name": "Login Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Login\": \"Eduardo\",\r\n    \"Password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{UrlBaseAuth}}/Login",
+							"host": [
+								"{{UrlBaseAuth}}"
+							],
+							"path": [
+								"Login"
 							]
 						}
 					},
